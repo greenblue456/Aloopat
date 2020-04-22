@@ -1,0 +1,26 @@
+.projects {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-area: initial;
+
+  img {
+    max-width: 100%;
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+
+  p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .item {
+    width: 40vw;
+    height: 40vh;
+  }
+}

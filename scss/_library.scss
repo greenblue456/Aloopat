@@ -1,0 +1,100 @@
+.imagebox {
+  margin: 10vh 20vw;
+  //width: 80%;
+  //padding: 20vh 20vw;
+}
+
+.imagebox img {
+  //padding: 0 20vw;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+#main-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  //padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 30px;
+}
+
+//CSS for two box (1 photo and 1 text/description) grid format
+.twoboxgrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  padding: 2vh 10vw;
+  grid-gap: 2vw;
+
+  img {
+    max-width: 100%;
+    margin: auto;
+    border-radius: 0%;
+
+    &#longimage {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+      //padding: 15vh 15vw;
+    }
+
+    &#bigimage {
+      padding: 4vh 4vw;
+    }
+  }
+
+  div {
+    max-width: 100%;
+    margin: auto;
+    border-radius: 0%;
+
+    p,
+    ul {
+      //font-family: cursive;
+    }
+  }
+}
+
+.pageheader {
+  h1,
+  h2,
+  h3 {
+    margin-top: 0;
+    color: rgb(19, 51, 59);
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  h3 {
+    font-family: cursive;
+    font-weight: normal;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+// three image block
+.threegrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1vh 10vw;
+
+  .threeimage {
+    max-width: 100%;
+    padding: 0px 10px;
+  }
+}
