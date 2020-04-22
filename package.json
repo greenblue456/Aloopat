@@ -10,7 +10,6 @@
   },
   "author": "Pushpanjali Shrestha",
   "license": "MIT",
-  "homepage": "https://greenblue456.github.io/Portfolio"
   "dependencies": {
     "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
