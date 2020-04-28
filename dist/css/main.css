@@ -105,7 +105,6 @@ main {
       font-size: 3rem; }
     main#home div {
       padding: 0rem 20vw;
-      display: table-cell;
       vertical-align: middle; }
     main#home div p {
       font-size: 1.7rem;
@@ -275,7 +274,8 @@ main {
 .grid5x3 {
   padding: 1vh 10vw;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px; }
   .grid5x3 .grid5x3image {
     width: 100%;
     max-width: 330px;
@@ -455,3 +455,95 @@ img#slideshow {
   .next,
   .text {
     font-size: 11px; } }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 500px) {
+  .menu-btn.close .btn-line {
+    background: #fabc5f; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/portrait.jpg");
+      background-position: center;
+      background-size: cover;
+      width: 150px;
+      height: 150px; }
+  main#home div {
+    padding: 0px; }
+  .imagebox {
+    margin: 5vh 2vh; }
+  .about-info {
+    grid-template-columns: 1fr; }
+    .about-info .bio-image {
+      max-width: 100%; }
+    .about-info .bio {
+      text-align: justify; }
+  .projects {
+    grid-template-columns: 1fr; }
+  .twoboxgrid {
+    grid-template-columns: 1fr;
+    padding: 0; }
+    .twoboxgrid div {
+      text-align: justify; }
+  .sectiontext {
+    padding: 0vh 0vw;
+    text-align: justify; }
+  .imagefull {
+    padding: 0; }
+  .sectionheading {
+    padding: 0; }
+  .subsectionheading {
+    padding: 0; }
+  .threegrid {
+    grid-template-columns: 1fr;
+    padding: 0; }
+    .threegrid .threeimage {
+      max-width: 100%;
+      padding: 2vh 0vw; }
+  .imagefulllong {
+    padding: 2vh 0vw; }
+  .grid5x3 {
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px; }
+    .grid5x3 .grid5x3image {
+      margin: 0; }
+  .box {
+    padding: 0; }
+  .grid-container1 {
+    grid-template-columns: 1fr; }
+  .nested-grid-container1 {
+    display: block; }
+  .simplegrid1 {
+    grid-template-columns: 1fr;
+    padding: 0; } }

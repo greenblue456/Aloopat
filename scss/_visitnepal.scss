@@ -28,6 +28,7 @@
   padding: 1vh 10vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
 
   .grid5x3image {
     width: 100%;

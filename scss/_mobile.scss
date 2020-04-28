@@ -1,0 +1,191 @@
+//Widescreens
+@include mediaXL {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+//Desktop and Laptop
+@include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+//Tablets and small laptop
+@include mediaMd {
+  main {
+    //align-items: center;
+    //text-align: center;
+    &#home {
+      div {
+        //padding: 0px;
+      }
+    }
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+//Smartphones
+@include mediaSm {
+  //Menu-------------------------------------------------------------
+
+  .menu-btn {
+    &.close {
+      .btn-line {
+        background: rgb(250, 188, 95);
+      }
+    }
+  }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url("../img/portrait.jpg");
+      background-position: center;
+      background-size: cover;
+      width: 150px;
+      height: 150px;
+    }
+  }
+  //HomePage-------------------------------------------------------------
+  main {
+    //align-items: center;
+    //text-align: center;
+    &#home {
+      div {
+        padding: 0px;
+      }
+    }
+  }
+
+  .imagebox {
+    margin: 5vh 2vh;
+  }
+
+  //About Me------------------------------------------------------------
+  .about-info {
+    grid-template-columns: 1fr;
+
+    .bio-image {
+      max-width: 100%;
+    }
+
+    .bio {
+      text-align: justify;
+    }
+  }
+
+  //My Work------------------------------------------------------------
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  //Visit Nepal------------------------------------------------------------
+  .twoboxgrid {
+    grid-template-columns: 1fr;
+    padding: 0;
+
+    div {
+      text-align: justify;
+    }
+  }
+  .sectiontext {
+    padding: 0vh 0vw;
+    text-align: justify;
+    //text-indent: 20px;
+  }
+  .imagefull {
+    padding: 0;
+  }
+  .sectionheading {
+    padding: 0;
+  }
+  .subsectionheading {
+    padding: 0;
+  }
+
+  .threegrid {
+    grid-template-columns: 1fr;
+    padding: 0;
+
+    .threeimage {
+      max-width: 100%;
+      padding: 2vh 0vw;
+    }
+  }
+
+  .imagefulllong {
+    padding: 2vh 0vw;
+  }
+
+  .grid5x3 {
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+
+    .grid5x3image {
+      margin: 0;
+    }
+  }
+
+  //Checkin App------------------------------------------------------------
+
+  .box {
+    padding: 0;
+  }
+
+  //Medz------------------------------------------------------------
+  .grid-container1 {
+    grid-template-columns: 1fr;
+  }
+
+  .nested-grid-container1 {
+    display: block;
+  }
+
+  //Medz------------------------------------------------------------
+
+  .simplegrid1 {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
