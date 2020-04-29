@@ -498,8 +498,10 @@ img#slideshow {
       background-size: cover;
       width: 150px;
       height: 150px; }
-  main#home div {
-    padding: 0px; }
+  main {
+    padding: 4rem 2rem; }
+    main#home div {
+      padding: 0px; }
   .imagebox {
     margin: 5vh 2vh; }
   .about-info {
